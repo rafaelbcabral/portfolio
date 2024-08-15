@@ -1,0 +1,352 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Platypi:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .scroll-offset {
+    position: relative;
+    top: -100px;
+    padding-top: 100px;
+  }
+
+  .jetbrains-mono {
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  body {
+    @apply ml-0 sm:ml-4 md:ml-10 lg:ml-60 jetbrains-mono bg-gray-100 dark:bg-background text-black dark:text-white;
+  }
+
+  /* NAVBAR / HEADER */
+  header {
+    @apply flex flex-col md:flex-row items-center justify-between p-4 md:mb-36 mb-8 rounded-xl shadow-lg shadow-primary dark:shadow-primaryDark md:mr-48 mr-0.5;
+  }
+
+  nav {
+    @apply flex flex-wrap gap-4 md:gap-6 mt-4 md:mt-0;
+  }
+
+  .themeButton{
+    @apply px-4 py-2 text-black dark:text-white hover:text-yellow-400 dark:hover:text-yellow-400;
+  }
+
+  .navbar-items {
+    @apply hover:text-primary ml-4 md:ml-0 text-sm jetbrains-mono px-3 py-2 dark:hover:text-primaryDark;
+  }
+
+  .navbar-contact-item {
+    @apply rounded-full bg-primary border-2 border-primary px-4 py-2 text-white dark:bg-primaryDark dark:border-primaryDark;
+  }
+
+  .navbar-contact-item:hover {
+    @apply text-primary bg-white transition font-bold duration-500 dark:text-primaryDark dark:bg-background;
+  }
+
+  /* MAIN */
+  main {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 items-center;
+  }
+
+  .my-name {
+    @apply text-primary dark:text-primaryDark text-4xl md:text-5xl ml-0 md:ml-2;
+  }
+
+  .text-main {
+    @apply ml-3 md:ml-2 whitespace-pre-line mb-6 text-base mr-12 md:mr-0;
+  }
+
+  .cv-download {
+    @apply text-black font-bold dark:text-gray-200;
+  }
+
+  .main-contact-items {
+    @apply rounded-full ml-5 border-2 border-primary shadow-lg px-5 items-center py-2 text-background text-sm dark:bg-primaryDark dark:border-primaryDark dark:text-background;
+  }
+
+  .main-contact-items:hover {
+    @apply shadow-[0_0_0_1px] shadow-gray-300 bg-primary transition duration-500 text-white dark:shadow-primaryDark dark:bg-background;
+  }
+
+  .photo-main {
+    @apply flex -ml-56 col-span-1;
+  }
+
+  .cv-mobile {
+    @apply md:hidden flex flex-col items-center font-bold mr-4 text-xl;
+  }
+
+  /* BORDER ANIMATION */
+  .border-animation {
+    @apply ml-1;
+    position: relative;
+    border-radius: 100%;
+    width: 20.5rem;
+    height: 20.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .border-animation::before,
+  .border-animation::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 10rem);
+    height: calc(100% + 10rem);
+    border-radius: 50%;
+    background: radial-gradient(circle, #10B981 0%, #10B981 20%, transparent 20%, transparent 40%, #10B981 40%, #10B981 60%, transparent 60%, transparent 80%, #10B981 80%, #10B981);
+    background-size: 200% 200%;
+    animation: border-animet 3s linear infinite;
+  }
+
+  .dark .border-animation::before,
+  .border-animation::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 10rem);
+    height: calc(100% + 10rem);
+    border-radius: 50%;
+    background: radial-gradient(circle, #34D399 0%, #34D399 20%, transparent 20%, transparent 40%, #34D399 40%, #34D399 60%, transparent 60%, transparent 80%, #34D399 80%, #34D399);
+    background-size: 200% 200%;
+    animation: border-animet 3s linear infinite;
+  }
+  
+  .border-animation::after {
+    filter: blur(3.125rem);
+  }
+  
+  @keyframes border-animet {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* ASIDE */
+
+  aside{
+    @apply fixed top-1/2 right-0 transform -translate-y-1/2 p-3 rounded-full shadow-2xl shadow-primary mr-3 flex flex-col items-center gap-10 text-white dark:bg-opacity-40 bg-opacity-60 md:bg-opacity-100 bg-primary dark:bg-primaryDark
+  }
+  .aside-items {
+    @apply relative transition-shadow border-4 border-transparent rounded-full text-sm dark:text-white;
+  }
+
+  .aside-items:hover {
+    @apply shadow-[0_0_0_10px] shadow-primaryDark bg-primaryDark transition duration-500 dark:text-primaryDark dark:shadow-background dark:bg-background;
+  }
+
+  /* FIRST SECTION */
+  .first-section {
+    @apply mt-12 md:mt-20 lg:mt-80 grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8 lg:px-16 mb-52 scroll-offset;
+  }
+
+  .section-1-tittles {
+    @apply text-3xl md:text-5xl;
+  }
+
+  .section-1-subtitle {
+    @apply text-3xl md:text-3xl lg:text-3xl mb-4 mt-12 text-primary dark:text-primaryDark;
+  }
+
+  .section-1-skills {
+    @apply flex flex-wrap rounded-lg gap-7 mr-3;
+  }
+
+  .skills-items {
+    @apply flex items-center justify-center px-2 py-2 rounded-full border-2 border-primary shadow-2xl shadow-primary bg-gray-800 dark:bg-gray-300 dark:border-primaryDark;
+  }
+
+  .item-skill-size {
+    @apply w-12 h-12;
+  }
+
+  .courses-bar {
+    @apply rounded-lg px-4 py-7 border-2 border-primary shadow-lg flex flex-col items-start gap-2 font-semibold w-full sm:w-80 md:w-80 dark:bg-primaryDark dark:border-primaryDark;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, color 0.5s ease;
+  }
+  
+  .courses-bar:hover {
+    @apply shadow-[0_0_0_1px] shadow-gray-300 bg-primary transition duration-500 dark:shadow-primaryDark dark:bg-background;
+  }
+  
+  .courses-bar:hover .date-course,
+  .courses-bar:hover .name-course,
+  .courses-bar:hover .plataform {
+    @apply text-white;
+  }
+  
+  .date-course {
+    @apply text-sm text-primary text-start dark:text-black;
+  }
+  
+  .name-course {
+    @apply text-sm text-black text-start dark:text-black;
+  }
+  
+  .plataform {
+    @apply text-sm text-gray-400 text-start ml-3 dark:text-black;
+  }
+  
+
+  /* My PROJETS */
+
+  #portfolio {
+    scroll-margin-top: 160px; /* Ajuste conforme necessário */
+  }
+  .portfolio-section {
+    @apply px-4 py-8 mx-auto container scroll-offset lg:mr-60 mb-52 scroll-offset;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1700px) {
+    .portfolio-section {
+      @apply -ml-32;
+    }
+  }
+
+  .portfolio-header {
+    @apply flex justify-between items-center;
+  }
+  .portfolio-title {
+    @apply md:text-3xl text-xl font-bold text-primary dark:text-primaryDark;
+  }
+  .portfolio-link {
+    @apply text-sm text-gray-400 dark:text-gray-300;
+  }
+  .portfolio-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8;
+  }
+  .portfolio-card {
+    @apply bg-gray-800 dark:bg-background rounded-lg shadow-lg overflow-hidden;
+  }
+  .portfolio-image {
+    @apply w-full h-48 object-cover border-b-2 border-gray-800 dark:border-b-0;
+  }
+  .portfolio-content {
+    @apply p-4 dark:border-2 dark:border-primaryDark;
+  }
+  .portfolio-title-card {
+    @apply text-lg font-bold text-white;
+  }
+  .portfolio-description {
+    @apply text-gray-300 dark:text-gray-200 text-sm;
+  }
+  .portfolio-buttons {
+    @apply flex justify-center items-center mt-4 space-x-4;
+  }
+  .portfolio-button-primary {
+    @apply bg-primary text-white font-bold py-2 px-4 rounded dark:bg-gray-800 dark:text-white hover:bg-gray-300 hover:text-primary dark:hover:bg-gray-300 dark:hover:text-primary transition duration-500;
+  }
+  .portfolio-button-secondary {
+    @apply text-gray-300 dark:text-gray-200 hover:text-white;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    @apply !text-primaryDark dark:text-primaryDark;
+  }
+    
+  .swiper-pagination-bullet {
+    @apply text-background;
+  }
+
+  .swiper-container {
+    @apply w-full overflow-hidden;
+  }
+
+  .swiper-slide {
+    @apply box-border;
+  }
+
+  /* CONTACT */
+
+  article{
+    @apply flex flex-col md:flex-row bg-white rounded-xl shadow-lg overflow-hidden p-2 md:p-10 md:mr-52 dark:bg-primaryDark
+  }
+  .form-container {
+    @apply w-full md:w-1/2 p-6 md:p-10 bg-white dark:bg-primaryDark;
+  }
+
+  .info-container {
+    @apply w-full md:w-6/12 p-6 md:p-10 bg-gray-800 dark:bg-background text-white dark:text-white mr-0 rounded-xl;
+  }
+
+  .form-title {
+    @apply text-4xl font-bold mb-4 text-primary dark:text-black;
+  }
+
+  .form-text {
+    @apply text-gray-600 mb-6 text-sm;
+  }
+
+  .form-input {
+    @apply w-full p-2 mb-4 border-b-2 border-gray-300 dark:bg-primaryDark dark:placeholder-black dark:border-black;
+  }
+
+  .submit-button {
+    @apply w-full p-4 bg-gray-800 text-white rounded-lg hover:text-primaryDark hover:bg-gray-200 transition duration-500;
+  }
+
+  .info-title {
+    @apply text-3xl font-bold mb-6;
+  }
+
+  .info-item {
+    @apply flex items-center;
+  }
+
+  .info-icon {
+    @apply text-xl mr-4;
+  }
+
+  .info-img {
+    @apply w-96 flex justify-center items-center;
+  }
+
+  /* FOOTER */
+
+  footer {
+    @apply text-background dark:text-white py-6 ml-2 md:mr-52 mt-24;
+  }
+
+  .footer-container {
+    @apply container mx-auto flex flex-col items-center;
+  }
+
+  .footer-social-links {
+    @apply flex space-x-6 mb-4;
+  }
+
+  .footer-social-icon {
+    @apply text-2xl hover:text-gray-400;
+  }
+
+  .footer-nav-links {
+    @apply flex space-x-8 mb-6 md:text-lg;
+  }
+
+  .footer-nav-link {
+    @apply hover:text-gray-400;
+  }
+
+  .footer-text {
+    @apply text-center text-sm;
+  }
+
+  .footer-brand {
+    @apply font-bold;
+  }
+
+}
