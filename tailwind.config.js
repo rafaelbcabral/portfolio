@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-Module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.js'], // ou o caminho dos seus arquivos de template
+module.exports = {
+  content: ['./src/**/*.html', './src/**/*.js'], // ou o caminho dos seus arquivos de template
   darkMode: 'media', // ou 'class' se você estiver usando a classe .dark
   darkMode: 'class',
   theme: {
