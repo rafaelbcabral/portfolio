@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  
-  content: [
-    "./src/**/*.{html,js}",
-  ],
+Module.exports = {
+  purge: ['./src/**/*.html', './src/**/*.js'], // ou o caminho dos seus arquivos de template
+  darkMode: 'media', // ou 'class' se você estiver usando a classe .dark
   darkMode: 'class',
   theme: {
     extend: {
@@ -16,3 +14,4 @@ module.exports = {
   },
   plugins: [],
 }
+
