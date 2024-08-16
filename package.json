@@ -5,7 +5,7 @@
 
 
 "scripts": {
-  "build": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify"
+  "build": "cp src/index.html public/index.html && <outro_comando_de_build>"
 }
 
 }
