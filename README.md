@@ -1,6 +1,6 @@
 <h1 align="center">
-  <p><b>PORTFÓLIO DE RAFAEL CABRAL 💻🌟</b> <br> <p style="font-size: 15px">Um showcase dos meus projetos e habilidades.</p></p>
-  <img src="img/portfolio.jpg">
+  <p><b>Meu portfólio 🎈</b> <br> <p style="font-size: 5px">Um showcase dos meus projetos e habilidades.</p></p>
+  https://github.com/user-attachments/assets/4c98ff4e-9056-4253-a36e-17e8961235c4
   <br>
 </h1>
 <a href="https://rafaelcabral.netlify.app/" style="text-decoration: none; color: #007bff;">
@@ -8,7 +8,7 @@
 </a>
 
 
-## ✨ Sobre
+## 📚 Sobre
 
 ### Este é o meu portfólio online, projetado para exibir minhas habilidades e projetos na área de desenvolvimento web. Aqui você encontrará uma seleção de trabalhos que demonstram minha experiência e conhecimentos, incluindo exemplos de código, layouts e soluções criativas que desenvolvi ao longo da minha jornada profissional e acadêmica.
 
