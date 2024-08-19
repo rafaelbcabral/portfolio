@@ -1,7 +1,12 @@
 <h1 align="center">
   <p><b>Meu portfólio 🎈</b> <br> <p style="font-size: 5px">Um showcase dos meus projetos e habilidades.</p></p>
 </h1>
-https://github.com/user-attachments/assets/4c98ff4e-9056-4253-a36e-17e8961235c4
+
+
+https://github.com/user-attachments/assets/cd37ef81-9519-4d39-b9de-70fca05ec52d
+
+
+<br>
 <a href="https://rafaelcabral.netlify.app/" style="text-decoration: none; color: #007bff;">
   🚀 Para explorar o portfólio, clique aqui!
 </a>
