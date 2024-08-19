@@ -70,19 +70,10 @@
   
   .cv-mobile {
     @apply md:hidden flex flex-col items-center font-bold mr-4 text-xl;
-    display: flex; /* Garante que o link seja tratado como um bloco flexível */
-    justify-content: center; /* Centraliza o conteúdo dentro do botão */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    width: 100%; /* O botão ocupará toda a largura disponível */
-    text-align: center; /* Centraliza o texto */
   }
   
   .main-contact-items {
     @apply rounded-full ml-5 border-2 border-primary shadow-lg px-5 py-2 text-background text-sm dark:bg-primaryDark dark:border-primaryDark dark:text-background;
-    display: flex; /* Mantém o layout flexível */
-    justify-content: center; /* Centraliza o conteúdo dentro do botão */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    width: 100%; /* O botão ocupará toda a largura disponível */
   }
 
   .main-contact-items:hover {
