@@ -1,5 +1,5 @@
 <h1 align="center">
-  <p><b>Meu portfólio 🎈</b> <br> <p style="font-size: 5px">Um showcase dos meus projetos e habilidades.</p></p>
+  <p><b>Meu portfólio 🎈</b> <br>
 </h1>
 
 
