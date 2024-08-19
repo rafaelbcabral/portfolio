@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/cd37ef81-9519-4d39-b9de-70fca05ec52d
 ### Este é o meu portfólio online, projetado para exibir minhas habilidades e projetos na área de desenvolvimento web. Aqui você encontrará uma seleção de trabalhos que demonstram minha experiência e conhecimentos, incluindo exemplos de código, layouts e soluções criativas que desenvolvi ao longo da minha jornada profissional e acadêmica.
 
 
-##- [HTML5](https://www.w3schools.com/html/)
+- [HTML5](https://www.w3schools.com/html/)
 Estrutura e semântica de documentos
 - [CSS3](https://www.w3schools.com/css/)
 Estilização e design responsivo
