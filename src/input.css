@@ -67,10 +67,11 @@
   .cv-download {
     @apply text-black font-bold dark:text-gray-200;
   }
-
+  
   .main-contact-items {
     @apply rounded-full ml-5 border-2 border-primary shadow-lg px-5 items-center py-2 text-background text-sm dark:bg-primaryDark dark:border-primaryDark dark:text-background;
   }
+  
 
   .main-contact-items:hover {
     @apply shadow-[0_0_0_1px] shadow-gray-300 bg-primary transition duration-500 text-white dark:shadow-primaryDark dark:bg-background;
@@ -82,6 +83,8 @@
 
   .cv-mobile {
     @apply md:hidden flex flex-col items-center font-bold mr-4 text-xl;
+    display: inline-block;
+    width: 100%;
   }
 
   /* BORDER ANIMATION */
