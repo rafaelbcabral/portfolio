@@ -26,22 +26,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Formulário
   document.getElementById('contact-form').addEventListener('submit', function(event) {
-
+    event.preventDefault(); // Evita o recarregamento da página
+  
     const formData = new FormData(this);
-
+  
     fetch('https://api.staticforms.xyz/submit', {
       method: 'POST',
       body: formData
     })
     .then(response => response.json())
-    .then(() => {
-      alertSuccess();
+    .then(data => {
+      if (data.success) { 
+        alertSuccess();
+        this.reset(); // Limpa o formulário após o envio
+      } else {
+        alertError();
+      }
     })
+    .catch(() => alertError());
   });
-
+  
   function alertSuccess() {
     alert('Seu e-mail foi enviado com sucesso!');
   }
+  
+  function alertError() {
+    alert('Ocorreu um erro ao enviar o e-mail. Tente novamente.');
+  }
+  
 });
 
 // SWIPER 
