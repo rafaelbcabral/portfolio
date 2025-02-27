@@ -57,7 +57,7 @@
   }
 
   .my-name {
-    @apply text-primary dark:text-primaryDark text-4xl md:text-5xl ml-0 md:ml-2;
+    @apply text-primary dark:text-primaryDark text-4xl md:text-5xl ml-1 md:ml-2;
   }
 
   .text-main {

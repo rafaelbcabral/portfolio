@@ -3,14 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentTheme = localStorage.getItem('theme');
   if (currentTheme) {
     document.documentElement.classList.add(currentTheme);
-    updateIcon(); // Atualiza o ícone ao carregar a página
+    updateIcon();
   }
 
   const themeToggleButton = document.getElementById('theme-toggle');
   themeToggleButton.addEventListener('click', () => {
     document.documentElement.classList.toggle('dark');
     localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-    updateIcon(); // Atualiza o ícone ao alternar o tema
+    updateIcon(); 
   });
 
   function updateIcon() {
@@ -37,10 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(() => {
       alertSuccess();
     })
-    .catch(error => {
-      console.error('Erro:', error);
-      alert('Houve um problema ao enviar a mensagem.');
-    });
   });
 
   function alertSuccess() {
