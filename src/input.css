@@ -155,7 +155,7 @@
   }
 
   .section-1-tittles {
-    @apply text-3xl md:text-5xl;
+    @apply text-lg md:text-lg;
   }
 
   .section-1-subtitle {
